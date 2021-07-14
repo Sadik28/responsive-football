@@ -1,0 +1,229 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* common styles and utilites */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;  
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #2D25A0;
+}
+
+.header-container{
+display: flex;
+justify-content:space-between;
+width: 90%;
+margin: 60px auto;
+}
+.banner{
+    width: 100%;
+}
+
+.banner h1{
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 80px;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+/* h1:hover{
+    transform: scale(1.06);
+    transition-duration: 2s;
+    transform: translate(10px, 10px);
+} */
+.watch-button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    width: 110px;
+}
+.banner-image img{
+    width: 100%;
+    margin-right: 100px;
+}
+.banner-image img:hover{
+    transform: scale(1.1);
+    transition-duration: 5s;
+    transition: transform 3s;
+    
+}
+/* palyer image and name and styles */
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    justify-content: center;
+    grid-row-gap: 30px;
+    width: 1050px;
+    margin: 60px auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    
+}
+.players{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px 25px;
+}
+.player img {
+    width: 100%;
+}
+/* section third utilites */
+.container-3{
+    background: lightgrey;
+    display: flex;
+    justify-content: center;
+}
+.container-3-area{
+    width: 1050px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.blog{
+    width: 100%;
+    margin: 24px 0px;
+    padding-right: 65px; 
+}
+.blog p{
+    margin: 20px 0;
+}
+.blogs{
+    font-size: 48px;
+    line-height: 60px;
+}
+.text{
+    font-size: 16px;
+    margin-top: -16px;
+}
+.watch-button{
+    padding: 10px 24px;
+    color: #FFFFFF;
+}
+.match img{
+    width: 100%;
+}
+
+/*************Container 4*************/
+.container-4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-4-grid{
+    width: 1050px;
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* last and footer part  */
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 483.87px;
+    height: 110px;
+    margin-left: 481px;
+    margin-top: 128px;
+}
+.icons{
+justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 42px;
+  font-size: 22px;
+  margin-left: 750px;
+  margin-top: 20px;
+  
+}
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* last section */
+.news-title{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.newses{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 44px;
+    align-items: center;
+    justify-content: space-between;
+}
+.news .news-banner img{
+    width: 277px;
+    height: 217px;
+}
+footer {
+    margin: 20px auto 40px;
+}
+/*************************************
+**********For mobile phones:*********/
+@media only screen and (max-width: 688px) {
+    .header-container {
+        display: flex;
+        width: 90%;
+        margin: 60px auto;
+        flex-direction: column;
+    }
+    .banner {
+        margin-bottom: 30px;
+    }
+    .container-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin: 60px auto;
+
+    }
+    .player img {
+        width: 50%;
+    }
+    .player-details{
+        width: 50%;
+    }
+    .container-3-area {
+        width: auto;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .sec-4-grid{
+        width: auto;
+        margin: 60px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo {
+        display: flex;
+        justify-items: center;
+        height: 110px;
+        margin-top: 128px;
+        margin-left: 0;
+    }
+}
